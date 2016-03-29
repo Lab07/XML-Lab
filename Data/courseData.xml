@@ -1,138 +1,476 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<!DOCTYPE data SYSTEM 'coursesDTD.dtd'>
-<data>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Schema.xsd">
     <!-- Monday -->
     <day day="Monday">
-            <time startTime="1:30">
                 <booking>
+                    <startTime>1:30</startTime>
                     <course>ACIT4770</course>
                     <room>SE12-306</room>
                     <instructor>Trevor Lord</instructor>
                     <type>Lecture</type>
                     <endTime>3:20</endTime>
                 </booking>
-            </time>
-            <time startTime="3:30">
                 <booking>
-                    <course>ACIT4910</course>
+                    <startTime>3:30</startTime>
+                    <course>ACIT4910</course>                   
                     <room>SW9-206</room>
                     <instructor>Richard Chau</instructor>
                     <type>Lecture</type>
                     <endTime>4:20</endTime>
                 </booking>
-            </time>
-            <time startTime="4:30">
                 <booking>
-                    <course>ACIT4650</course>
+                    <startTime>4:30</startTime>
+                    <course>ACIT4650</course>                                    
                     <room>SE6-205</room>
                     <instructor>Medhat Elmasry</instructor>
                     <type>Lecture</type>
                     <endTime>5:20</endTime>
                 </booking>
-            </time>
     </day>
     <!-- Tuesday -->
     <day day="Tuesday">
-            <time startTime="10:30">
                 <booking>
-                    <course>ACIT4620</course>
+                    <startTime>10:30</startTime>
+                    <course>ACIT4620</course>                   
                     <room>SE12-306</room>
                     <instructor>Bethany Edmunds</instructor>
                     <type>Lab</type>
                     <endTime>12:20</endTime>
                 </booking>
-            </time>
-            <time startTime="12:30">
                 <booking>
-                    <course>ACIT4650</course>
-                            <room>SW9-206</room>
-                            <instructor>Medhat Elmasry</instructor>
-                            <type>Lecture</type>
-                            <endTime>1:20</endTime>
+                    <startTime>12:30</startTime>
+                    <course>ACIT4650</course>  
+                    <room>SW9-206</room>
+                    <instructor>Medhat Elmasry</instructor>
+                    <type>Lecture</type>                   
+                    <endTime>1:20</endTime>
                 </booking>
-            </time>
-            <time startTime="1:30">
-            <booking>
-                    <course>ACIT4650</course>
-                            <room>SE12-306</room>
-                            <instructor>Medhat Elmasry</instructor>
-                            <type>Lab</type>
-                            <endTime>3:20</endTime>
-                    </booking>
-            </time>
-            <time startTime="3:30">
+
                 <booking>
-                    <course>ACIT4620</course>
+                    <startTime>1:30</startTime>
+                    <course>ACIT4650</course>                  
+                    <room>SE12-306</room>
+                    <instructor>Medhat Elmasry</instructor>
+                    <type>Lab</type>                   
+                    <endTime>3:20</endTime>
+                </booking>
+                <booking>
+                    <startTime>3:30</startTime>
+                    <course>ACIT4620</course>                  
                     <room>SW3-3615</room>
                     <instructor>Bethany Edmunds</instructor>
-                    <type>Lecture</type>
+                    <type>Lecture</type>                    
                     <endTime>5:20</endTime>
                 </booking>
-            </time>
     </day>
     <!-- Wednesday -->
     <day day="Wednesday">
-            <time startTime="10:30">
+
                 <booking>
-                    <course>ACIT4660</course>
+                    <startTime>10:30</startTime>
+                    <course>ACIT4660</course>                   
                     <room>SE12-306</room>
                     <instructor>Steve Fabiszewski</instructor>
-                    <type>Lab</type>
+                    <type>Lab</type>                   
                     <endTime>12:20</endTime>
                 </booking>
-            </time>
-            <time startTime="12:30">
+
+
                 <booking>
-                    <course>ACIT4850</course>
+                    <startTime>12:30</startTime>
+                    <course>ACIT4850</course>                  
                     <room>SW3-1750</room>
                     <instructor>James Parry</instructor>
-                    <type>Lecture</type>
+                    <type>Lecture</type>                    
                     <endTime>2:20</endTime>
                 </booking>
-            </time>
+
     </day>
     <!-- Thursday -->
     <day day="Thursday">
-        <time startTime="9:30">
+
             <booking>
-                <course>ACIT4910</course>
+                <startTime>9:30</startTime>
+                <course>ACIT4910</course>               
                 <room>SW5-1840</room>
                 <instructor>Richard Chau</instructor>
                 <type>Lecture</type>
                 <endTime>10:20</endTime>
             </booking>
-        </time>
-        <time startTime="10:30">
+
+
             <booking>
-            <course>ACIT4850</course>
+                <startTime>10:30</startTime>
+                <course>ACIT4850</course>               
                 <room>SE12-320</room>
                 <instructor>James Parry</instructor>
                 <type>Lab</type>
                 <endTime>12:20</endTime>
             </booking>
-        </time>
-        <time startTime="1:30">
+
             <booking>
-                <course>ACIT4910</course>
+                <startTime>1:30</startTime>
+                <course>ACIT4910</course>              
                 <room>SE12-306</room>
-                <instructor>Richar Chau</instructor>
+                <instructor>Richard Chau</instructor>
                 <type>Lab</type>
                 <endTime>3:20</endTime>
             </booking> 
-        </time>
     </day>
     <!-- Friday -->
     <day day="Friday">
-        <time startTime="8:30">
             <booking>
-                <course>ACIT4660</course>
+                <startTime>8:30</startTime>
+                <course>ACIT4660</course>               
+                <room>SW9-206</room>
+                <instructor>Steve Fabiszewski</instructor>
+                <type>Lecture</type>              
+                <endTime>10:20</endTime>
+            </booking>
+    </day>
+    <!-- End XML by Day, begin by Time -->
+    <time startTime="8:30">
+            <booking>
+                <day>Friday</day>
+		<course>ACIT4660</course>              
                 <room>SW9-206</room>
                 <instructor>Steve Fabiszewski</instructor>
                 <type>Lecture</type>
                 <endTime>10:20</endTime>
             </booking>
-        </time>
-    </day>
+</time>
+<!-- 9:30 Classes -->
+<time startTime="9:30">
+            <booking>
+                <day>Thursday</day>
+		<course>ACIT4910</course>
+                <room>SW5-1840</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lecture</type>
+                <endTime>10:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Friday</day>
+		<course>ACIT4660</course>
+                <room>SW9-206</room>
+                <instructor>Steve Fabiszewski</instructor>
+                <type>Lecture</type>
+                <endTime>10:20</endTime>
+            </booking>
+</time>
+<!-- 10:30 Classes -->
+<time startTime="10:30">
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4620</course>              
+                <room>SE12-306</room>
+                <instructor>Bethany Edmunds</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Wednesday</day>
+		<course>ACIT4660</course>               
+                <room>SE12-306</room>
+                <instructor>Steve Fabiszewski</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+            <booking>
+                <day>Thursday</day>
+		<course>ACIT4850</course>               
+                <room>SE12-320</room>
+                <instructor>James Parry</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+</time>
+<!-- 11:30 Classes -->
+<time startTime="11:30">
+
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4620</course>                
+                <room>SE12-306</room>
+                <instructor>Bethany Edmunds</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Wednesday</day>
+		<course>ACIT4660</course>              
+                <room>SE12-306</room>
+                <instructor>Steve Fabiszewski</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+
+
+            <booking>
+                <day>Thursday</day>
+                <course>ACIT4850</course>              
+                <room>SE12-320</room>
+                <instructor>James Parry</instructor>
+                <type>Lab</type>
+                <endTime>12:20</endTime>
+            </booking>
+
+</time>
+<!-- 12:30 Classes -->
+<time startTime="12:30">
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4650</course>               
+                <room>SW9-206</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lecture</type>
+                <endTime>1:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Wednesday</day>
+                <course>ACIT4850</course>               
+                <room>SW3-1750</room>
+                <instructor>James Parry</instructor>
+                <type>Lecture</type>
+                <endTime>2:20</endTime>
+            </booking>
+
+</time>
+<!-- 1:30 Classes -->
+<time startTime="1:30">
+            <booking>
+                <day>Monday</day>
+                <course>ACIT4770</course>               
+                <room>SE12-306</room>
+                <instructor>Trevor Lord</instructor>
+                <type>Lecture</type>
+                <endTime>3:20</endTime>
+            </booking>
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4650</course>              
+                <room>SE12-306</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+            <booking>
+                <day>Wednesday</day>
+                <course>ACIT4850</course>                   
+                <room>SW3-1750</room>
+                <instructor>James Parry</instructor>
+                <type>Lecture</type>
+                <endTime>2:20</endTime>
+            </booking>
+            <booking>
+                <day>Thursday</day>
+		<course>ACIT4910</course>
+                <room>SE12-306</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+</time>
+<!-- 2:30 Classes -->
+<time startTime="2:30">
+
+            <booking>
+                <day>Monday</day>
+		<course>ACIT4770</course>               
+                <room>SE12-306</room>
+                <instructor>Trevor Lord</instructor>
+                <type>Lecture</type>
+                <endTime>3:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4650</course>               
+                <room>SE12-306</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+            <booking>
+                <day>Thursday</day>
+		<course>ACIT4910</course>           
+                <room>SE12-306</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+</time>
+<!-- 3:30 Classes -->
+<time startTime="3:30">
+            <booking>
+                <day>Monday</day>
+                <course>ACIT4910</course>               
+                <room>SW9-206</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lecture</type>
+                <endTime>4:20</endTime>
+            </booking>
+            <booking>
+                <day>Tuesday</day>
+		<course>ACIT4620</course>               
+                <room>SW3-3615</room>
+                <instructor>Bethany Edmunds</instructor>
+                <type>Lecture</type>
+                <endTime>5:20</endTime>
+            </booking>
+</time>
+<!-- 4:30 Classes -->
+<time startTime="4:30">
+            <booking>
+                <day>Monday</day>
+                <course>ACIT4650</course>               
+                <room>SE6-205</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lecture</type>
+                <endTime>5:20</endTime>
+            </booking>
+
+            <booking>
+                <day>Tuesday</day>
+                <course>ACIT4620</course>               
+                <room>SW3-3615</room>
+                <instructor>Bethany Edmunds</instructor>
+                <type>Lecture</type>
+                <endTime>5:20</endTime>
+            </booking>
+</time>
+<!-- End of data by time, begin by course -->
+<!-- ACIT4770 -->
+<course course="ACIT4770">
+            <booking>
+                <startTime>1:30</startTime>
+                <day>Monday</day>		
+                <room>SE12-306</room>
+                <instructor>Trevor Lord</instructor>
+                <type>Lecture</type>
+                <endTime>3:20</endTime>
+            </booking>
+</course>
+<!-- ACIT4910 -->
+<course course="ACIT4910">
+            <booking>
+		<startTime>3:30</startTime>
+                <day>Monday</day>
+                <room>SW9-206</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lecture</type>
+                <endTime>4:20</endTime>
+            </booking>
+
+            <booking>
+		<startTime>9:30</startTime>
+                <day>Thursday</day>
+                <room>SW5-1840</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lecture</type>
+                <endTime>10:20</endTime>
+            </booking>
+            
+            <booking>
+		<startTime>1:30</startTime>
+                <day>Thursday</day>
+                <room>SW5-1840</room>
+                <instructor>Richard Chau</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+
+</course>
+<!-- ACIT4650 -->
+<course course="ACIT4650">
+            <booking>
+		<startTime>4:30</startTime>
+                <day>Monday</day>
+                <room>SE6-205</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lecture</type>
+                <endTime>5:20</endTime>
+            </booking>
+            <booking>
+		<startTime>12:30</startTime>
+                <day>Tuesday</day>
+                <room>SW9-206</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lecture</type>
+                <endTime>1:20</endTime>
+            </booking>
+            <booking>
+		<startTime>1:30</startTime>
+                <day>Tuesday</day>
+                <room>SE12-306</room>
+                <instructor>Medhat Elmasry</instructor>
+                <type>Lab</type>
+                <endTime>3:20</endTime>
+            </booking>
+</course>
+<!-- ACIT4620-->
+<course course="ACIT4620">
+        <booking>
+            <startTime>10:30</startTime>
+            <day>Tuesday</day>
+            <room>SE12-306</room>
+            <instructor>Bethany Edmunds</instructor>
+            <type>Lab</type>
+            <endTime>12:20</endTime>
+        </booking>
+        
+        <booking>
+            <startTime>3:30</startTime>
+            <day>Tuesday</day>
+            <room>SW3-3615</room>
+            <instructor>Bethany Edmunds</instructor>
+            <type>Lecture</type>
+            <endTime>5:20</endTime>
+        </booking>
+</course>
+<!-- ACIT4660-->
+<course course="ACIT4660">
+        <booking>
+            <startTime>10:30</startTime>
+            <day>Wednesday</day>
+            <room>SE12-306</room>
+            <instructor>Steve Fabiszewski</instructor>
+            <type>Lab</type>
+            <endTime>12:20</endTime>
+        </booking>
+        <booking>
+            <startTime>8:30</startTime>
+            <day>Friday</day>
+            <room>SW9-206</room>
+            <instructor>Steve Fabiszewski</instructor>
+            <type>Lecture</type>
+            <endTime>10:20</endTime>
+        </booking>
+</course>
+<!-- ACIT4850-->
+<course course="ACIT4850">
+        <booking>
+            <startTime>12:30</startTime>
+            <day>Wednesday</day>
+            <room>SW3-1750</room>
+            <instructor>James Parry</instructor>
+            <type>Lecture</type>
+            <endTime>2:20</endTime>
+        </booking>
+        
+        <booking>
+            <startTime>10:30</startTime>
+            <day>Friday</day>
+            <room>SE12-320</room>
+            <instructor>James Parry</instructor>
+            <type>Lab</type>
+            <endTime>12:20</endTime>
+        </booking>
+</course>
 </data>
