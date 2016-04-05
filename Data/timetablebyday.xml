@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="html"/>
+        
+        
+        <xsl:template match="/">
+		<html>
+			<head>
+				<title>Timetable Schedule</title>
+			</head>
+			<body>
+				<h1>Timetable Schedule</h1>
+				<table border="1">
+					<xsl:call-template name="dayAcross"/>
+				</table>
+			</body>
+		</html>
+	</xsl:template>
+        
+        <xsl:template name="dayAcross">
+		<tr>
+			<th></th>
+			<xsl:for-each select="/data/day">
+				<th>
+					<xsl:value-of select="./@day"/>
+				</th>
+			</xsl:for-each>
+		</tr>
+                <xsl:for-each select="/data/time">
+                    <xsl:call-template name="time"/>
+                </xsl:for-each>
+	</xsl:template>
+        
+        <xsl:template name="time">
+		<tr>
+			<td>
+				<xsl:value-of select="./@startTime"/>
+			</td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./day = 'Monday'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./day = 'Tuesday'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./day = 'Wednesday'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./day = 'Thursday'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./day = 'Friday'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        
+		</tr>
+	</xsl:template>
+	
+	<xsl:template name="booking">
+			<xsl:value-of select="./course"/><br/>
+			<xsl:value-of select="./room"/><br/>
+			<xsl:value-of select="./instructor"/><br/>
+			<xsl:value-of select="./type"/><br/>
+	</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="html"/>
+	
+	
+	<xsl:template match="/">
+		<html>
+			<head>
+				<title>Timetable Schedule</title>
+			</head>
+			<body>
+				<h1>Timetable Schedule</h1>
+				<table border="1">
+					<xsl:call-template name="timeAcross"/>
+				</table>
+			</body>
+		</html>
+	</xsl:template>
+
+<!-- start times horizontal -->
+	<xsl:template name="timeAcross">
+		<tr>
+			<th></th>
+			<xsl:for-each select="/data/time">
+				<th>
+					<xsl:value-of select="./@startTime"/>
+				</th>
+			</xsl:for-each>
+		</tr>
+                <xsl:for-each select="/data/day">
+                    <xsl:call-template name="day"/>
+                </xsl:for-each>
+	</xsl:template>
+	
+<!-- handle the bookings-->
+	<xsl:template name="day">
+		<tr>
+			<td>
+				<xsl:value-of select="./@day"/>
+			</td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '8:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '9:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '10:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '11:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '12:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '1:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '2:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '3:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>
+                        <td>
+			<xsl:for-each select="./booking">  
+                            <xsl:if test="./startTime = '4:30'">
+				<xsl:call-template name="booking"/>
+                            </xsl:if>
+			</xsl:for-each>
+                        </td>   
+		</tr>
+	</xsl:template>
+	
+<!-- handle one booking time-->
+	<xsl:template name="booking">
+			<xsl:value-of select="./course"/><br/>
+			<xsl:value-of select="./room"/><br/>
+			<xsl:value-of select="./instructor"/><br/>
+			<xsl:value-of select="./type"/><br/>
+	</xsl:template>
+</xsl:stylesheet>
